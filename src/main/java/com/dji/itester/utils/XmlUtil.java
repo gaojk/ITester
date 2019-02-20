@@ -62,7 +62,7 @@ public class XmlUtil {
 	}
 
 	public static void main(String[] args) throws IOException {
-		String url = PropertiesUtil.getValue("url");
+		String url = PropertiesUtil.getValue("url","");
 
 		String xmlPath = System.getProperty("user.dir") + "\\src\\main\\java\\com\\dji\\itester\\data\\paramData.xml";
 		Map<String, String> paramsMap = XmlUtil.readXMLDocument(xmlPath, "signIn");
